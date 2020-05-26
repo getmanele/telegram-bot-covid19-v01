@@ -4,7 +4,8 @@
   "description": "пробный бот телеграм для онлайн статистики по covid19",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bot.js"
   },
   "author": "drs",
   "license": "ISC",
