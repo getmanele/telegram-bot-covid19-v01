@@ -3,8 +3,15 @@ const { Telegraf } = require('telegraf');
 const api = require('covid19-api');
 const markup = require('telegraf/markup');
 const COUNTRIES_LIST = require(`./constants`);
-
 const bot = new Telegraf(process.env.BOT_TOKEN);
+
+require('https')
+  .createServer()
+  .listen(process.env.PORT || 5000)
+  .on('request', function (req, res) {
+    res.end('');
+  });
+
 bot.start((ctx) =>
   ctx.reply(
     `
