@@ -25,6 +25,7 @@ bot.start((ctx) =>
         [`Ukraine`, `Russia`],
         [`US`, `Italy`],
         [`Canada`, `Portugal`],
+        [`China`, `Uk`],
       ])
       .resize()
       .extra()
