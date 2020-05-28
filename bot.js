@@ -7,7 +7,7 @@ const bot = new Telegraf(process.env.BOT_TOKEN);
 
 require('https')
   .createServer()
-  .listen(process.env.PORT || 1200000)
+  .listen(process.env.PORT || 5000)
   .on('request', function (req, res) {
     res.end('');
   });
